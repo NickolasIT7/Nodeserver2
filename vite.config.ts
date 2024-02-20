@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import { VitePluginNode } from 'vite-plugin-node';
-// import path from 'path'
+import path from 'path'
 
 export default defineConfig({
   // ...vite configures
@@ -53,7 +53,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-    //   '#root': path.resolve(__dirname, './'),
+      '#root': path.resolve(__dirname, './'),
     },
   },
   optimizeDeps: {
